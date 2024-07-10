@@ -36,7 +36,7 @@ export default function Home() {
         </div>
         <Image
           className="h-auto lg:w-full"
-          src="/Frame 1000002352.png"
+          src="/users.svg"
           width={100}
           height={100}
           quality={100}
@@ -45,14 +45,14 @@ export default function Home() {
       {/* COMING SOON SECTION */}
       <Image
         className="h-auto lg:w-full"
-        src="/Logos group.png"
+        src="/Logos.svg"
         width={100}
         height={100}
       />
 
       {/* ABOUT US SECTION */}
       <div className="flex flex-col w-full p-20 gap-9">
-        <h3 className="uppercase text-blue text-base font-inter leading-5">
+        <h3 className="uppercase text-blue font-[500] tracking-[1px] font-inter leading-5">
           About Bikywrites university
         </h3>
         <p className="text-2xl font-inter font-normal text-left text-textblack">
@@ -71,7 +71,7 @@ export default function Home() {
         <h3 className="uppercase text-blue text-base text-center font-inter leading-5">
           Our Features
         </h3>
-        <div className="grid grid-cols-3 gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
           <FeaturesCard>
             <Image
               className="h-20 w-20"
@@ -185,7 +185,7 @@ export default function Home() {
           </div>
           <Image
             className="w-1/2 h-fit"
-            src="/Group 2318.png"
+            src="/ambassador.svg"
             width={90}
             height={90}
           />
@@ -285,7 +285,7 @@ export default function Home() {
           </div>
           <Image
             className="w-1/2 h-fit"
-            src="/Group 1.png"
+            src="/facilitator.svg"
             width={90}
             height={90}
           />
