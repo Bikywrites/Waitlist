@@ -13,7 +13,7 @@ const campusAmbassador = () => {
     setIsSubmitting(true);
     const formData = new FormData(e.target);
     const rawFormData = Object.fromEntries(formData);
-    console.log(rawFormData)
+    console.log(rawFormData);
     const response = await createAmbassador(rawFormData);
     console.log(response);
     // e.target.reset();
@@ -103,7 +103,20 @@ const campusAmbassador = () => {
             Why do you want to become a campus ambassador
           </label>
           <textarea
+            name='why_to_be_an_ambassador'
+            id=''
+            cols='30'
+            rows='10'
+            required
+            className='border border-slate-400 rounded p-2 '></textarea>
+        </div>
+        <div className='flex flex-col gap-1'>
+          <label htmlFor='' className='capitalize'>
+            Additional Information
+          </label>
+          <textarea
             name='additionalnotes'
+            placeholder='any additional thing you would like us to know'
             id=''
             cols='30'
             rows='10'

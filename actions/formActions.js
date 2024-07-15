@@ -48,7 +48,7 @@ export async function createAmbassador(formData) {
 export async function createFacilitator(formData) {
   try {
     const response = await fetch(
-      'https://bikywrites.up.railway.app/ambassador',
+      'https://bikywrites.up.railway.app/facilitator',
       {
         method: 'POST',
         headers: {
