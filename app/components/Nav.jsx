@@ -9,7 +9,7 @@ export default function Nav() {
   // Define your navigation links
   const links = [
     { href: '/waitlist', label: 'Join our waitlist' },
-    { href: '/', label: 'Become a facilitator' },
+    { href: '/facilitator', label: 'Become a facilitator' },
     { href: '/campus-ambassador', label: 'Become a campus ambassador' },
     { href: '/', label: 'See our pitch deck' },
   ];

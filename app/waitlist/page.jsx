@@ -2,7 +2,8 @@
 import Image from 'next/image';
 import Input from '../components/Input';
 import Select from '../components/Select';
-import { createWaitlist } from '@/actions/createWaitlist';
+import { createWaitlist } from '@/actions/formActions';
+import Link from 'next/link';
 import { useState } from 'react';
 
 export default function waitlist() {
@@ -15,6 +16,7 @@ export default function waitlist() {
     const rawFormData = Object.fromEntries(formData);
     const response = await createWaitlist(rawFormData);
     console.log(response);
+    e.target.reset();
     setIsSubmitting(false);
   }
 
@@ -24,9 +26,14 @@ export default function waitlist() {
         className='bg-cover bg-center h-fit'
         style={{ backgroundImage: "url('/Halfton png 1.png')" }}>
         <div className='px-8 lg:px-20'>
-          <h1 className='lg:text-6xl text-3xl font-jakata font-bold leading-tight text-blue'>
-            Waitlist for Potential <br /> Students
-          </h1>
+          <div className='flex flex-col'>
+            <Link href='/' className='self-end'>
+              <img src='/master.png' alt='' />
+            </Link>
+            <h1 className='lg:text-6xl text-3xl font-jakata font-bold leading-tight text-blue'>
+              Waitlist for Potential <br /> Students
+            </h1>
+          </div>
         </div>
 
         <Image
@@ -100,7 +107,7 @@ export default function waitlist() {
           type='submit'
           className='py-3 px-6 bg-blue hover:bg-lighterBlue self-end w-fit text-white rounded-lg'
           disabled={isSubmitting}>
-          Submit
+          {isSubmitting ? 'submitting...' : 'submit'}
         </button>
       </form>
     </section>
