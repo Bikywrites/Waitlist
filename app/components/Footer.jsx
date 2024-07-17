@@ -1,10 +1,11 @@
-import React from 'react'
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
 const Footer = () => {
   return (
-      <footer className="flex flex-col px-24 py-14 gap-6 bg-blue">
-        <div className="flex flex-row justify-between">
+    <footer className="flex flex-col p-5 gap-6 bg-blue">
+      <div className="flex flex-col md:flex-row justify-between gap-[16px]">
+        <div className="flex flex-col gap-[16px]">
           <div className="flex flex-row gap-6">
             <a className="font-jakata font-meduim text-sm text-white cursor-pointer">
               Terms & Conditions
@@ -13,36 +14,33 @@ const Footer = () => {
               Privacy Policy
             </a>
           </div>
-          <Image
-            className="w-20 h-auto md:w-24 lg:w-40 "
-            src="/BIKYWRITES LOGO 2.png"
-            width={100}
-            height={100}
-          />
-          <div className="flex flex-row gap-6">
-            <a className="flex flex-row items-center justify-center bg-yellowish text-textblack w-8 h-8 rounded-full">
-              <i className="bx bxl-facebook"></i>
-            </a>
-            <a className="flex flex-row items-center justify-center bg-yellowish text-textblack w-8 h-8 rounded-full">
-              <i className="bx bxl-twitter"></i>
-            </a>
-            <a className="flex flex-row items-center justify-center bg-yellowish text-textblack w-8 h-8 rounded-full">
-              <i className="bx bxl-instagram"></i>
-            </a>
-            <a className="flex flex-row items-center justify-center bg-yellowish text-textblack w-8 h-8 rounded-full">
-              <i className="bx bxl-linkedin"></i>
-            </a>
-            <a className="flex flex-row items-center justify-center bg-yellowish text-textblack w-8 h-8 rounded-full">
-              <i className="bx bxl-youtube"></i>
-            </a>
-          </div>
+          <img src="/BIKYWRITES LOGO 2.png" className="w-[40%] h-auto" />
         </div>
-        <hr className="h-0.5" />
-        <small className="font-jakata font-light text-white text-center text-sm">
-          Copywight Bikywrites 2024
-        </small>
-      </footer>
-  )
-}
 
-export default Footer
+        <div className="flex flex-row gap-6">
+          <a className="flex flex-row items-center justify-center bg-yellowish text-textblack w-8 h-8 rounded-full">
+            <i className="bx bxl-facebook"></i>
+          </a>
+          <a className="flex flex-row items-center justify-center bg-yellowish text-textblack w-8 h-8 rounded-full">
+            <i className="bx bxl-twitter"></i>
+          </a>
+          <a className="flex flex-row items-center justify-center bg-yellowish text-textblack w-8 h-8 rounded-full">
+            <i className="bx bxl-instagram"></i>
+          </a>
+          <a className="flex flex-row items-center justify-center bg-yellowish text-textblack w-8 h-8 rounded-full">
+            <i className="bx bxl-linkedin"></i>
+          </a>
+          <a className="flex flex-row items-center justify-center bg-yellowish text-textblack w-8 h-8 rounded-full">
+            <i className="bx bxl-youtube"></i>
+          </a>
+        </div>
+      </div>
+      <hr className="h-0.5" />
+      <small className="font-jakata font-light text-white text-center text-sm">
+        Copywight Bikywrites 2024
+      </small>
+    </footer>
+  );
+};
+
+export default Footer;
