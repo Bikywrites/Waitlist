@@ -90,7 +90,10 @@ const Facilitator = () => {
               </p>
             </div>
           </div>
-          <a className="bg-yellowish rounded text-textblack text-center py-4 font-bold text-sm cursor-pointer w-40 h-14 hover:bg-lighterBlue">
+          <a
+            href="/facilitator"
+            className="bg-yellowish rounded text-textblack text-center py-4 font-bold text-sm cursor-pointer w-40 h-14 hover:bg-lighterBlue"
+          >
             APPLY NOW
           </a>
         </div>

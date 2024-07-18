@@ -73,11 +73,14 @@ const Ambassador = () => {
               career endeavors.
             </p>
           </div>
-          <a className="bg-blue rounded text-white text-center py-4 font-bold text-sm cursor-pointer w-40 h-14 hover:bg-lighterBlue">
+          <a
+            href="/ambassador"
+            className="bg-blue rounded text-white text-center py-4 font-bold text-sm cursor-pointer w-40 h-14 hover:bg-lighterBlue"
+          >
             APPLY NOW
           </a>
         </div>
-        <div className="hidden lg:flex bg-[red]  gap-4">
+        <div className="hidden lg:flex  gap-4">
           <div className="flex flex-col gap-3">
             <img
               src="/IMG1A.png"

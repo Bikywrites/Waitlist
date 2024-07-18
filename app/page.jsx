@@ -2,11 +2,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
-import Hero from "./components/Hero";
-import Aboutus from "./components/Aboutus";
-import Features from "./components/Features";
-import Ambassador from "./components/Ambassador";
-import Facilitator from "./components/Facilitator";
+import Hero from "../components/Hero";
+import Aboutus from "../components/Aboutus";
+import Features from "../components/Features";
+import Ambassador from "../components/Ambassador";
+import Facilitator from "../components/Facilitator";
 
 export default function Home() {
   return (

@@ -14,20 +14,35 @@ const Footer = () => {
               Privacy Policy
             </a>
           </div>
-          <img src="/BIKYWRITES LOGO 2.png" className="w-[40%] h-auto" />
+          <img
+            src="/BIKYWRITES LOGO 2.png"
+            className="w-[40%] sm:w-[20%] md:w-[60%] h-auto"
+          />
         </div>
 
         <div className="flex flex-row gap-6">
           <a className="flex flex-row items-center justify-center bg-yellowish text-textblack w-8 h-8 rounded-full">
             <i className="bx bxl-facebook"></i>
           </a>
-          <a className="flex flex-row items-center justify-center bg-yellowish text-textblack w-8 h-8 rounded-full">
+          <a
+            target="_blank"
+            href="https://x.com/bikywrites?s=21&t=cZqwqr2OeNKzdWOc1dD4IQ"
+            className="flex flex-row items-center justify-center bg-yellowish text-textblack w-8 h-8 rounded-full"
+          >
             <i className="bx bxl-twitter"></i>
           </a>
-          <a className="flex flex-row items-center justify-center bg-yellowish text-textblack w-8 h-8 rounded-full">
+          <a
+            target="_blank"
+            href="https://www.instagram.com/bikywrites_university?igsh=MXFuNDMyYzVvNTVuMA%3D%3D&utm_source=qr"
+            className="flex flex-row items-center justify-center bg-yellowish text-textblack w-8 h-8 rounded-full"
+          >
             <i className="bx bxl-instagram"></i>
           </a>
-          <a className="flex flex-row items-center justify-center bg-yellowish text-textblack w-8 h-8 rounded-full">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/showcase/bikywrites-university/"
+            className="flex flex-row items-center justify-center bg-yellowish text-textblack w-8 h-8 rounded-full"
+          >
             <i className="bx bxl-linkedin"></i>
           </a>
           <a className="flex flex-row items-center justify-center bg-yellowish text-textblack w-8 h-8 rounded-full">
